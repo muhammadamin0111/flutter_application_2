@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///Axmadjon komment
 void main() {
   runApp(const MyApp());
 }
