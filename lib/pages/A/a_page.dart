@@ -18,13 +18,13 @@ class _APageState extends State<APage> {
       body: Center(
         child: Text(
           'A page',
-          style: Theme.of(context).textTheme.headline1,
+          style: Theme.of(context).textTheme.displayLarge,
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => const BPage()));
+          Navigator.of(context).pushNamed('/b');
+          //Navigator.pushNamed(context,'/b);
         },
         child: const Text('B'),
       ),

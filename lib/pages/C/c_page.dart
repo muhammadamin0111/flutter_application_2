@@ -14,7 +14,7 @@ class _CPageState extends State<CPage> {
       appBar: AppBar(),
       body: Center(
         child: Text(
-          'C page',
+          'C Page',
           style: Theme.of(context).textTheme.headline1,
         ),
       ),
