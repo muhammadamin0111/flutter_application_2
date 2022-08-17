@@ -7,7 +7,7 @@ void main() {
   runApp(const MyApp());
 }
 
-//anonymous routing
+//named routing
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
