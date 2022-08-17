@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/foundation/key.dart';
+import 'package:flutter/src/widgets/framework.dart';
 
-import 'package:flutter_application_2/pages/B/b_page.dart';
+import '../B/b_page.dart';
 
-//stf bn main ochiladi
+//anonymous routing
+
 class APage extends StatefulWidget {
   const APage({super.key});
 
@@ -17,14 +20,14 @@ class _APageState extends State<APage> {
       appBar: AppBar(),
       body: Center(
         child: Text(
-          'A page',
-          style: Theme.of(context).textTheme.displayLarge,
+          'A Page',
+          style: Theme.of(context).textTheme.headline1,
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).pushNamed('/b');
-          //Navigator.pushNamed(context,'/b);
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => const BPage()));
         },
         child: const Text('B'),
       ),

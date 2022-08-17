@@ -7,7 +7,7 @@ void main() {
   runApp(const MyApp());
 }
 
-//named routing
+//anonymous routing
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -16,11 +16,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.green),
-      routes: {
-        '/a': (context) => const APage(),
-        '/b': (context) => const BPage(),
-        '/c': (context) => const CPage(),
-      },
       initialRoute: '/a',
     );
   }
