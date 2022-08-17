@@ -1,11 +1,7 @@
-//anonymous routing
-
-import 'package:flutter/cupertino.dart';
+//generated routing
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
-
-import '../C/c_page.dart';
 
 class BPage extends StatefulWidget {
   const BPage({super.key});
@@ -22,15 +18,15 @@ class _BPageState extends State<BPage> {
       body: Center(
         child: Text(
           'B Page',
-          style: Theme.of(context).textTheme.headline1,
+          style: Theme.of(context).textTheme.headline2,
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {
-            Navigator.push(context,
-                CupertinoPageRoute(builder: (context) => const CPage()));
-          },
-          label: const Text('C page')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pushNamed('/c page');
+        },
+        child: const Text("C page"),
+      ),
     );
   }
 }

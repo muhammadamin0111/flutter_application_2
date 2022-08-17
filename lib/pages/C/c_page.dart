@@ -1,5 +1,4 @@
-//anonymous routing
-import 'package:flutter/cupertino.dart';
+//generated routing
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -19,15 +18,9 @@ class _CPageState extends State<CPage> {
       body: Center(
         child: Text(
           "C Page",
-          style: Theme.of(context).textTheme.headline1,
+          style: Theme.of(context).textTheme.headline3,
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {
-            Navigator.push(context,
-                CupertinoPageRoute(builder: (context) => const CPage()));
-          },
-          label: const Text("C Page")),
     );
   }
 }
